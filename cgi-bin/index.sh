@@ -16,9 +16,9 @@ echo "</head>"
 echo "<body>"
 echo "<div class=\"container\">"
 
-cat /home/root/includes/header.html
+cat /home/root/public/includes/header.html
 
-cat /home/root/includes/ethos.html
+cat /home/root/public/includes/ethos.html
 
 echo "<h2>Users:</h2>"
 echo "<ul>"
