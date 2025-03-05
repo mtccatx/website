@@ -2,7 +2,7 @@
 
 So you'd like to host some content on the internet. You've come to the right
 place! As a member of Moontower Computer Club, you have the awesome power of
-making content available on world wide web :D
+making content available on the world wide web :D
 
 ### Sounds good, let's get a nice landing page going!
 
