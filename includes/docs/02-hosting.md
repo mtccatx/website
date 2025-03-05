@@ -97,8 +97,9 @@ user, and the working directory will always be set to `~/public/cgi-bin`.
 Be careful with this. Remember that anyone in the entire world can trigger the
 script to run.
 
-Currently, CGI support is a bit limited. I need to make it possible to get query
-parameters/CGI parameters so that users can build more complex applications.
+There's a lot of information that's passed to your script through the
+environment. For example the query parameters can be accessed by reading
+`QUERY_STRING`.
 
 ### Setting HTTP Headers
 
