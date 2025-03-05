@@ -4,8 +4,6 @@ So you'd like to host some content on the internet. You've come to the right
 place! As a member of Moontower Computer Club, you have the awesome power of
 making content available on the world wide web :D
 
-### Sounds good, let's get a nice landing page going!
-
 *Anything* you put in `~/public` will be publically visible at `https://moontowercomputer.club/~<YOUR USERNAME>/`.
 For example, if you had a picture called `selfie.jpg` and it was present at
 `~/public/images/selfie.jpg`, you could also view the picture in your browser at:
@@ -22,6 +20,15 @@ few exceptions:
 translate `~` to `/home/<YOUR USERNAME>` when it sees it. On the website we use
 `/~<YOUR USERNAME>` as part of the URL mostly by convention.
 </details>
+
+Additionally, the filename `index.html` is special and can be omitted in the
+URL. For example, if you go to to `https://moontowercomputer.club/~foo/`, the
+file in `/home/foo/public/index.html` will be served. If you go to
+`https://moontowercomputer.club/~foo/bar`, `/home/foo/public/bar/index.html`
+will be served, assuming that `/home/foo/public/bar` doesn't already exist as a
+file.
+
+### Sounds good, let's get a nice landing page going!
 
 First things first, you'll need to have set up your ssh access. Next you'll need
 some kind of editor. You have two options here:
@@ -55,6 +62,8 @@ here's a quick little starter pack:
     </body>
 </html>
 ```
+
+Put this in `~/public/index.html` and see it live at `https://.../~<YOUR USERNAME>/`!
 
 #### Is all of this HTML really necessary???
 
