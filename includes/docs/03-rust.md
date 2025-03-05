@@ -9,7 +9,7 @@ access rust tools, you'll have to figure out the equivalent for your shell.
 
 ```bash
 source "/opt/rust/env.fish"
-set -x RUSTUP_HOME=/opt/rust
+set -x RUSTUP_HOME /opt/rust
 ```
 
 Note that you'll still have `~/.cargo` for anything you build or install
