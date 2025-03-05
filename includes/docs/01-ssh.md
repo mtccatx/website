@@ -76,3 +76,6 @@ Here's some things to google as you learn about `SSH`!
   this on `moontower` yet though.
 + `ssh-fs`
 + vscode's ssh plugins
++ X-forwarding - lets you run graphical applications over SSH
++ `~/.ssh/config` - your SSH configuration file. You can set custom aliases for
+  SSH hosts among other things.
