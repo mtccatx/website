@@ -12,7 +12,7 @@ print("""\
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/static/style.css"/>
     <title>docs</title>
   </head>
   <body>

@@ -1,37 +1,49 @@
 #!/usr/bin/bash
 
 # Send headers
-echo "Content-Type: text/html"
-echo
-echo
+echo -e "Content-Type: text/html\n\n"
 
 # Send the content!
-echo "<!DOCTYPE html>"
-echo "<html>"
-echo "<head>"
-echo "  <link rel=\"stylesheet\" href=\"style.css\">"
-echo "  <title>MTCC</title>"
-echo "</head>"
+echo "\
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel=\"stylesheet\" href=\"/static/style.css\">
+  <title>MTCC</title>
+</head>
 
-echo "<body>"
-echo "<div class=\"container\">"
+<body>
+<div class=\"container\">
+"
 
+echo "  <div class=\"header\">"
 cat /home/root/public/includes/header.html
+cat /home/root/public/includes/description.html
+echo "  </div>"
+
+echo "\
+  <br>
+  <br>
+  <div class=\"userbar\">
+    <h2>Users:</h2>
+    <ul>"
+for dir in $(find /home -maxdepth 1 -type d | grep -v '^/home/root$\|^\/home$'); do
+  user=$(basename "$dir")
+  echo "      <li><a href=\"/~${user}\">~/${user}</a></li>"
+done
+echo "\
+      </ul>
+  </div>"
 
 cat /home/root/public/includes/ethos.html
 
-echo "<h2>Users:</h2>"
-echo "<ul>"
-for dir in $(find /home -maxdepth 1 -type d | grep -v '^/home/root$\|^\/home$'); do
-  user=$(basename "$dir")
-  echo "  <li><a href=\"/~${user}\">~/${user}</a></li>"
-done
-echo "</ul>"
-
-echo "<footer>"
-echo "  <i>Generated on <span class=\"generateddate\">$(date)</span></i>"
-echo "</footer>"
-
-echo "</div>"
-echo "</body>"
-echo "</html>"
+echo "\
+  <div class=\"footer\">
+    <br>
+    <footer>
+      <i>Generated on <span class=\"generateddate\">$(date)</span></i>
+    </footer>
+  </div>
+</div>
+</body>
+</html>"
