@@ -1,4 +1,4 @@
-## Hosting
+## [Hosting](#hosting)
 
 So you'd like to host some content on the internet. You've come to the right
 place! As a member of Moontower Computer Club, you have the awesome power of
@@ -14,19 +14,19 @@ few exceptions:
   served. 
 + Anything in `public/cgi-bin/` is special. More on this below.
 
-<details>
-<summary>What's the deal with all the `~`(tilda)s?</summary>
-`~` is shorthand for `/home/<YOUR USERNAME>`. Your shell should automatically
-translate `~` to `/home/<YOUR USERNAME>` when it sees it. On the website we use
-`/~<YOUR USERNAME>` as part of the URL mostly by convention.
-</details>
-
 Additionally, the filename `index.html` is special and can be omitted in the
 URL. For example, if you go to to `https://moontowercomputer.club/~foo/`, the
 file in `/home/foo/public/index.html` will be served. If you go to
 `https://moontowercomputer.club/~foo/bar`, `/home/foo/public/bar/index.html`
 will be served, assuming that `/home/foo/public/bar` doesn't already exist as a
 file.
+
+<details>
+<summary>What's the deal with all the `~`(tilda)s?</summary>
+`~` is shorthand for `/home/<YOUR USERNAME>`. Your shell should automatically
+translate `~` to `/home/<YOUR USERNAME>` when it sees it. On the website we use
+`/~<YOUR USERNAME>` as part of the URL mostly by convention.
+</details>
 
 ### Sounds good, let's get a nice landing page going!
 

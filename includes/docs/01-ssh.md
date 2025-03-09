@@ -1,4 +1,4 @@
-## SSH Access
+## [SSH Access](#ssh-access)
 
 ### What is SSH?
 

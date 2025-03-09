@@ -1,4 +1,4 @@
-## Using Rust
+## [Using Rust](#using-rust)
 
 Hello rustaceans! Rust is awesome, but takes up so much space. So we're going to
 share, and we're going to use a system-wide install of rust. It's present at
