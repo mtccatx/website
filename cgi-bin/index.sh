@@ -8,6 +8,13 @@ echo "\
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- OpenGraph Properties -->
+  <meta property=\"og:title\" content=\"Moontower Computer Club\" />
+  <meta property=\"og:type\" content=\"website\" />
+  <meta property=\"og:url\" content=\"https://moontowercomputer.club\" />
+  <meta property=\"og:description\" content=\"A Computer Club based in Austin, TX!\" />
+  <meta property=\"og:image\" content=\"\" /->
+
   <link rel=\"stylesheet\" href=\"/static/style.css\">
   <title>MTCC</title>
 </head>
