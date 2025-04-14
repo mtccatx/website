@@ -1,11 +1,8 @@
 #!/usr/bin/python
 import os
+import sys
 from pathlib import Path
 
-# Send headers
-print("Content-Type: text/html\n\n")
-
-# Send content
 includes_root = Path("/home/root/public/includes/")
 
 print("""\
@@ -13,7 +10,7 @@ print("""\
 <html>
   <head>
     <link rel="stylesheet" href="/static/style.css"/>
-    <title>docs</title>
+    <title>about</title>
   </head>
   <body>
     <div class="container">
@@ -22,13 +19,9 @@ print("""\
 with open(includes_root / "header.html") as f:
     print(f.read())
 
-docs_root = includes_root / "docs/build"
-for doc in sorted(os.listdir(docs_root)):
-    print(f"<a id={doc.split('.')[0]}></a>")
-    inc = docs_root / doc
-    with inc.open() as f:
-        print(f.read())
-    print("<hr>")
+sys.stdout.flush()
+
+os.system("pandoc -f markdown-smart -t html about.md")
 
 print("""\
     </div>
