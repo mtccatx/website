@@ -24,8 +24,7 @@ Moontower Computer Club is a community around doing computer. To keep our commun
 
 Some things we explicitly avoid:
 
-+ Interrupting others - our community can only thrive if we allow people to
-  communicate freely. Computing has a reputation of the loudest voices winning,
++ Talking over others. Computing has a reputation of the loudest voices winning,
   and we want to challenge that.
 + Belittling others or their ideas
 + Discrimination (sexism, racism, classism, etc.) whether subtle or overt
