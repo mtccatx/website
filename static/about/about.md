@@ -12,8 +12,7 @@
 Moontower Computer Club is a community around doing computer. To keep our community healthy and welcoming to all, this is our code of conduct:
 
 + We allow people to do computer in their own context and their own way.
-+ 
-+ Respect people's identities as they express it even if it’s not what you expect it to be (sex, sexuality, race, gender, pronouns, and many others)
++ Respect people's identities as they express it even if it's not what you expect it to be (sex, sexuality, race, gender, pronouns, and many others)
 + Allow people to hold opinions you don’t agree with
 + Make people feel safe, whether it's in the context of learning or socializing.
 + We are active listeners.
